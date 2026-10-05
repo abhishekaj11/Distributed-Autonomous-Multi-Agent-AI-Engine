@@ -4,7 +4,7 @@ An enterprise-grade, event-driven multi-agent orchestration platform designed to
 
 Built for production, the system includes native CI/CD evaluation pipelines to continuously monitor AI reasoning accuracy, regression, and token expenditure.
 
-## 🚀 Key Features
+## Key Features
 
 * **Agentic Orchestration (LangGraph):** Implements an autonomous "Supervisor-Worker" architecture. Agents can utilize external tools, manage long-term memory, and engage in self-reflection loops to correct failing execution paths dynamically. Achieves a 92% task completion rate on zero-shot multi-step queries.
 * **High-Throughput Local Inference:** Deploys quantized open-source models (e.g., Llama-3-8B-Instruct, Mistral) using **vLLM** and PagedAttention. Reduces p99 response latency by 45% compared to standard REST endpoint wrappers.
@@ -12,7 +12,7 @@ Built for production, the system includes native CI/CD evaluation pipelines to c
 * **Production LLMOps:** Containerized via Docker with **Redis** acting as the ultra-low latency contextual memory and session state manager for inter-agent communication.
 * **Systematic Evaluation (CI/CD):** Automated testing pipelines using synthetic datasets to track generation faithfulness, hallucination rates, and token cost regressions on every commit.
 
-## 🏗️ Architecture
+## Architecture
 
 ```text
 [User Request] 
@@ -41,7 +41,7 @@ Built for production, the system includes native CI/CD evaluation pipelines to c
 
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 * **Languages & Frameworks:** Python 3.10+, FastAPI, LangChain, LangGraph
 * **Inference & Serving:** vLLM, HuggingFace Transformers
@@ -49,7 +49,7 @@ Built for production, the system includes native CI/CD evaluation pipelines to c
 * **Infrastructure:** Docker, Docker Compose, GitHub Actions
 * **Evaluation:** Ragas / DeepEval, Pytest
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ docker-compose up --build -d
 
 ```
 
-## 💻 Quick Start
+## Quick Start
 
 Once the containers are running, you can interact with the multi-agent engine via the REST API.
 
@@ -119,7 +119,7 @@ curl -X POST "http://localhost:8080/v1/agent/execute" \
 
 ```
 
-## 🧪 Evaluation Pipeline (CI/CD)
+## Evaluation Pipeline (CI/CD)
 
 This project treats prompts and model parameters as code. To prevent regressions, run the evaluation suite before committing:
 
